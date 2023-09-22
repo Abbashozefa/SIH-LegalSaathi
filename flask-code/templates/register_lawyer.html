@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CLient Login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--===============================================================================================-->
+    <!-- <link rel="icon" type="image/png" href="{{url_for('static', filename='assets/img/icons/favicon.ico')}}" /> -->
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css')}}"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='assets/vendor/animate/animate.css')}}"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='assets/vendor/css-hamburgers/hamburgers.min.css')}}"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='assets/vendor/animsition/css/animsition.min.css')}}"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='assets/vendor/select2/select2.min.css')}}"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='assets/vendor/daterangepicker/daterangepicker.css')}}"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='assets/css/register.css')}}" />
+    <!--===============================================================================================-->
+  </head>
+  <body style="background-color: #008374;">
+    <div class="limiter">
+      <div
+        class="container-login100"
+        style="background-image: url('images/bg-01.jpg')"
+      >
+        <div class="wrap-login100 p-t-30 p-b-50">
+          <span class="login100-form-title p-b-41"> Account Login </span>
+          <form class="login100-form validate-form p-b-33 p-t-5" action="{{url_for('lawyer_register')}} "  method="post">
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Enter username"
+            >
+              <input
+                class="input100"
+                type="text"
+                name="username"
+                placeholder="User name"
+              />
+              <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+            </div>
+
+            
+
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Enter password"
+            >
+              <input
+                class="input100"
+                type="password"
+                name="pass"
+                placeholder="Password"
+              />
+              <span class="focus-input100" data-placeholder="&#xe80f;"></span>
+            </div>
+
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Enter Full Name"
+            >
+              <input
+                class="input100"
+                type="text"
+                name="fullname"
+                placeholder="Full name"
+              />
+              <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+            </div>
+
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Enter Email"
+            >
+              <input
+                class="input100"
+                type="email"
+                name="e-mail"
+                placeholder="Email"
+              />
+              <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+            </div>
+
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Enter phone no"
+            >
+              <input
+                class="input100"
+                type="number"
+                name="number"
+                placeholder="Phone"
+              />
+              <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+            </div>
+            <div
+              class="select3"
+            >
+            <label for="city">Select a city:</label>
+            <select name="city" id="special">
+              <option value="patna">Patna</option>
+              <option value="delhi">Delhi</option>
+              <option value="mumbai" >Mumbai</option>
+              <option value="lucknow" selected>Lucknow</option>
+              <option value="bangalore">Bangalore</option>
+              <option value="jaipur">Jaipur</option>
+              <option value="chandigarh">Chandigarh</option>
+              <option value="chennai">Chennai</option>
+              <option value="kerela">Kerela</option>
+              <option value="hyderabad">Hyderabad</option>
+              <option value="ranchi">Ranchi</option>
+              <option value="gujrat">Gujrat</option>
+              <option value="bhuwaneshwar">Bhubaneshwar</option>
+            </select>
+            </div>
+            
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Enter hourly rate in rs"
+            >
+              <input
+                class="input100"
+                type="number"
+                name="cost"
+                placeholder="Hourly rate in rs"
+              />
+              <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+            </div>
+            <div
+              class="select3"
+            >
+            <label for="speciality">Select a Speciality:</label>
+            <select name="Speciality" id="special">
+              <option value="Criminal">Criminal law</option>
+                        <option value="Civil">Civil law</option>
+                        <option value="Writ Jurisdiction">Writ Jurisdiction</option>
+                        <option value="Company">Company law</option>
+                        <option value="Contract">Contract law</option>
+                        <option value="Commercial">Commercial law</option>
+                        <option value="Construction">Construction law</option>
+                        <option value="IT">IT law</option>
+                        <option value="Family">Family law</option>
+                        <option value="Religious">Religious law</option>
+                        <option value="Investment">Investment law</option>
+                        <option value="Labour">Labour law</option>
+                        <option value="Property">Property law</option>
+                        <option value="Taxation">Taxation law</option>
+            </select>
+            </div>
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Enter Experience in years"
+            >
+              <input
+                class="input100"
+                type="number"
+                name="experience"
+                placeholder="Experience in years"
+              />
+              <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+            </div>
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Enter Highest Qualification"
+            >
+              <input
+                class="input100"
+                type="text"
+                name="qualification"
+                placeholder="Highest Qualification"
+              />
+              <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+            </div>
+            
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Enter Highest Qualification"
+            >
+              <input
+                class="input100"
+                type="text"
+                name="bio"
+                placeholder="Enter Your Bio"
+              />
+              <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+            </div>
+            
+             
+            
+            <div class="container-login100-form-btn m-t-32">
+              <button type="submit" class="login100-form-btn">Register</button>
+              <a href="{{url_for('lawyer_login')}}" style="text-decoration: none;"> <button type="button" class="login100-form-btn" style="background: -webkit-linear-gradient(left, #5445b2, #7918d4, #4298fa);margin: 9% auto;">Already registered?</button></a>
+            </div>
+            <!-- <a href="{{url_for('lawyer_login')}}"><button type="button" class="btn btn-outline-primary" disabled>Already registered?</button></a> -->
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="dropDownSelect1"></div>
+
+    <!--===============================================================================================-->
+    <script src="{{url_for('static', filename='assets/vendor/jquery/jquery-3.2.1.min.js')}}"></script>
+    <!--===============================================================================================-->
+    <script src="{{url_for('static', filename='assets/vendor/animsition/js/animsition.min.js')}}"></script>
+    <!--===============================================================================================-->
+    <script src="{{url_for('static', filename='assets/vendor/bootstrap/js/popper.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+    <!--===============================================================================================-->
+    <script src="{{url_for('static', filename='assets/vendor/select2/select2.min.js')}}"></script>
+    <!--===============================================================================================-->
+    <script src="{{url_for('static', filename='assets/vendor/daterangepicker/moment.min.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/vendor/daterangepicker/daterangepicker.js')}}"></script>
+    <!--===============================================================================================-->
+    <script src="{{url_for('static', filename='assets/vendor/countdowntime/countdowntime.js')}}"></script>
+    <!--===============================================================================================-->
+    <script src="{{url_for('static', filename='assets/js/register.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
